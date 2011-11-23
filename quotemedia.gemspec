@@ -6,10 +6,10 @@ Gem::Specification.new do |s|
   s.name        = "quotemedia"
   s.version     = Quotemedia::VERSION
   s.authors     = ["Chenoa Siegenthaler"]
-  s.email       = ["csiegenthaler@hedgeye.com"]
+  s.email       = ["cowmanifestation@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Quotemedia api wrapper}
+  s.description = %q{A thin wrapper to Quotemedia apis}
 
   s.rubyforge_project = "quotemedia"
 
