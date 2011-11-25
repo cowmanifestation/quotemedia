@@ -1,4 +1,4 @@
-require "quotemedia/version"
+require_relative "quotemedia/version"
 
 module QuoteMedia
   # QuoteMedia chart parameters reference:
@@ -61,12 +61,13 @@ module QuoteMedia
   }
 
   def self.create_chart_url(params)
+    # TODO: Raise error for parameters that don't exist, i.e. misspelled things
     unless params[:symbol]
       raise ArgumentError, "No symbol specified."
     end
 
     url = 'http://app.quotemedia.com/quotetools/getChart.go?'
 
-    CHART_DEFAULTS.merge(params).to_a.map {|a| a.join("=")}.join("&")
+    url << CHART_DEFAULTS.merge(params).to_a.map {|a| a.join("=")}.join("&")
   end
 end
