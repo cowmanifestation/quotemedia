@@ -1,13 +1,11 @@
 = QuoteMedia
 
-  QuoteMedia is a thin wrapper for the api of http://www.quotemedia.com/
+QuoteMedia is a thin wrapper for the api of http://www.quotemedia.com/
 
 == Charts
 
-  Custom charts can be obtained from quotemedia.com from a url containing all of the desired parameters. Use QuoteMedia.create_chart_url(params) 
-  to create a custom url. The only required parameter is +:symbol+ (the symbol for a stock or stock exchange). 
-  The others will be filled in with the default values unless specified. Refer to +lib/chart.rb+ for a list of all parameters.
+Custom charts can be obtained from quotemedia.com from a url containing all of the desired parameters. Use QuoteMedia.create_chart_url(params) to create a custom url. The only required parameter is +:symbol+ (the symbol for a stock or stock exchange). The others will be filled in with the default values unless specified. Refer to +lib/chart.rb+ for a list of all parameters.
 
 == License
 
-  The MIT License.  See LICENSE for a copy.
+The MIT License.  See LICENSE for a copy.
