@@ -2,16 +2,29 @@ require 'spec_helper'
 
 describe Chart do
   describe "#new" do
-    # it "should store params" do
-    #   puts Chart.new(symbol: 'abc')
-    # end
-
     it "should raise an error when no symbol is given" do
       lambda { Chart.new }.should raise_error
     end
   end
 
   describe '#url' do
+    it "should return a url with all the default parameters if given no others" do
+      url = Chart.new(symbol: 'abc').url
+
+      some_defaults = {
+        webmasterId: "500",
+        chscale: '5d',
+        chtype: 'AreaChart',
+        chfrm: 'ffffff',
+        chbdron: 'on',
+        chhig: '250',
+      }
+
+      some_defaults.each do |k,v|
+        url.should match(/#{k}=#{v}/)
+      end
+    end
+
     it "should give a url containing all the given parameters" do
       custom_params = { symbol: 'abc',
                         webmasterId: '321',

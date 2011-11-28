@@ -5,6 +5,7 @@ describe QuoteMedia do
     @url = QuoteMedia.create_chart_url(symbol: 'abc')
   end
 
+  # TODO These tests are redundant.
   describe '#create_chart_url' do
     it "should give a url string" do
       @url.class.should == String
