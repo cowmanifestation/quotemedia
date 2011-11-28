@@ -1,0 +1,6 @@
+# $ heroku console --app hedgeye-reader
+# >> RUBY_VERSION
+# => "1.9.2"
+# >> RUBY_PATCHLEVEL
+# => 180
+rvm use 1.9.2-p180@quotemedia --create
