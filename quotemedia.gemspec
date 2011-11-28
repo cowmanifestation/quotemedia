@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Quotemedia::VERSION
   s.authors     = ["Chenoa Siegenthaler"]
   s.email       = ["cowmanifestation@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/cowmanifestation/quotemedia"
   s.summary     = %q{Quotemedia api wrapper}
   s.description = %q{A thin wrapper to Quotemedia apis}
 
