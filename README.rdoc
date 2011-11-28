@@ -1,6 +1,6 @@
 = QuoteMedia
 
-QuoteMedia is a thin wrapper for the api of http://www.quotemedia.com/
+QuoteMedia is a thin wrapper for the api of http://www.quotemedia.com.
 
 == Charts
 
