@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe QuoteMedia do
   before(:all) do
-    @url = QuoteMedia.create_chart_url(symbol: 'abc')
+    @url = QuoteMedia.create_chart_url(:symbol => 'abc')
   end
 
   # TODO These tests are redundant.
@@ -24,7 +24,7 @@ describe QuoteMedia do
     end
 
     it "should replace default parameters with given parameters" do
-      QuoteMedia.create_chart_url(symbol: 'abc', webmasterId: '321', chgrdon: 'off').should match(/webmasterId=321.+chgrdon=off/)
+      QuoteMedia.create_chart_url(:symbol => 'abc', :webmasterId => '321', :chgrdon => 'off').should match(/webmasterId=321.+chgrdon=off/)
     end
   end
 end

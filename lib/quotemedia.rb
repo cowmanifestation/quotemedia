@@ -1,4 +1,4 @@
-require_relative "quotemedia/version"
+autoload :VERSION, "quotemedia/version"
 require_relative "chart"
 
 module QuoteMedia
