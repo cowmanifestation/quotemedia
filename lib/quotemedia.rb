@@ -1,5 +1,5 @@
 autoload :VERSION, "quotemedia/version"
-require_relative "chart"
+autoload :chart, "chart"
 
 module QuoteMedia
   def self.create_chart_url(params)
