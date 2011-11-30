@@ -4,7 +4,7 @@ require "quotemedia/version"
 
 Gem::Specification.new do |s|
   s.name        = "quotemedia"
-  s.version     = Quotemedia::VERSION
+  s.version     = QuoteMedia::VERSION
   s.authors     = ["Chenoa Siegenthaler"]
   s.email       = ["cowmanifestation@gmail.com"]
   s.homepage    = "https://github.com/cowmanifestation/quotemedia"
