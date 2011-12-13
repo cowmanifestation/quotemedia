@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe QuoteMedia do
+describe Quotemedia do
   before(:all) do
-    @url = QuoteMedia.create_chart_url(:symbol => 'abc')
+    @url = Quotemedia.create_chart_url(:symbol => 'abc')
   end
 
   describe '#create_chart_url' do
@@ -13,7 +13,7 @@ describe QuoteMedia do
 
     it "should raise an error if not given a symbol" do
       lambda do
-        QuoteMedia.create_chart_url
+        Quotemedia.create_chart_url
       end.should raise_error
     end
 
@@ -23,7 +23,7 @@ describe QuoteMedia do
     end
 
     it "should replace default parameters with given parameters" do
-      QuoteMedia.create_chart_url(:symbol => 'abc', :webmasterId => '321', :chgrdon => 'off').should match(/webmasterId=321.+chgrdon=off/)
+      Quotemedia.create_chart_url(:symbol => 'abc', :webmasterId => '321', :chgrdon => 'off').should match(/webmasterId=321.+chgrdon=off/)
     end
   end
 end

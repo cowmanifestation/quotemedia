@@ -1,15 +1,15 @@
 require 'spec_helper'
 
-describe Chart do
+describe Quotemedia::Chart do
   describe "#new" do
     it "should raise an error when no symbol is given" do
-      lambda { Chart.new }.should raise_error
+      lambda { Quotemedia::Chart.new }.should raise_error
     end
   end
 
   describe '#url' do
     it "should return a url with all the default parameters if given no others" do
-      url = Chart.new(:symbol => 'abc').url
+      url = Quotemedia::Chart.new(:symbol => 'abc').url
 
       some_defaults = {
         :webmasterId => "500",
@@ -36,7 +36,7 @@ describe Chart do
                         :chwid => '150'
       }
 
-      url = Chart.new(custom_params).url
+      url = Quotemedia::Chart.new(custom_params).url
       custom_params.each do |k,v|
         url.should match(/#{k}=#{v}/)
       end
