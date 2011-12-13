@@ -3,7 +3,7 @@ class Chart
   # http://www.quotemedia.com/content_solutions/module_resources.php
   # QuoteMedia Chart Builder: http://www.quotemedia.com/demoarea/chartbuilder-cookiebased.php
 
-  # TODO put default styling here that Chris selects
+  # Default styling here that Chris (designer) selected
   CHART_DEFAULTS = {
     webmasterId: "500",
 
@@ -29,9 +29,9 @@ class Chart
     # border color around plot area
     chbdr: 'cccccc',
     # background color
-    chbg: 'ffffff',
+    chbg: '', # transparent
     # background color of chart plot area
-    chbgch: 'ffffff',
+    chbgch: '', # transparent
     # line color
     chln: '465665',
     # primary fill color for area charts, and candlestick (and volume bars)
