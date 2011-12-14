@@ -22,17 +22,17 @@ module Quotemedia
       # Chart type - Options: bar, candle, compare, dot, hlc, line, mountain, ohlc, LineChart, BarChart, CandleStickChart, AreaChart, FinancialLine, FinancialBar, FinancialCandleStick
       :chtype  => 'AreaChart',
       # The frame around the image canvas on/off
-      :chfrmon => 'on',
+      :chfrmon => 'off',
       # frame color
-      :chfrm => 'ffffff',
+      :chfrm => '',
       # border around plot area on/off
-      :chbdron => 'on',
+      :chbdron => 'off',
       # border color around plot area
-      :chbdr => 'cccccc',
+      :chbdr => '',
       # background color
-      :chbg => '', # transparent
+      :chbg => 'ffffff00', # transparent
       # background color of chart plot area
-      :chbgch => '', # transparent
+      :chbgch => 'ffffff00', # transparent
       # line color
       :chln => '465665',
       # primary fill color for area charts, and candlestick (and volume bars)
