@@ -4,11 +4,10 @@ module Quotemedia
     # http://www.quotemedia.com/content_solutions/module_resources.php
     # QuoteMedia Chart Builder: http://www.quotemedia.com/demoarea/chartbuilder-cookiebased.php
 
-    # Default styling here that Chris (designer) selected
     CHART_DEFAULTS = {
       :webmasterId => "500",
 
-      # We don't want a default symbol - each chart should have its own.
+      # There is no default symbol - each chart should have its own.
       # symbol: nil, # i.e. ^DOW
 
       # This is the chart title; you can specify whatever you want, or leave it empty.
